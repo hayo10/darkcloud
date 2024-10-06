@@ -10,7 +10,7 @@ docker run -it -v <MODEL_DIR>:<MODEL_DIR> --runtime nvidia yezinri/samsung:v1 /b
 ```
 3. Execute the script
 ```
-python3 /darkcloud/script.py --file_path –base_path –batch_size –max_new_tokens 
+python3 /darkcloud/script.py --file_path –-base_path -–batch_size –-max_new_tokens 
 ```
 - file_path : jsonl 파일 경로 
 - base_path : safetensors 경로 
