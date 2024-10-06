@@ -362,7 +362,6 @@ class Phi3FlashAttention2(nn.Module):
                                     softmax_scale=None,
                                     causal=self.is_causal,
                                     window_size=(-1, -1),  # -1 means infinite context window
-                                    softcap=0.0, # 0.0 means deactivated
                                     alibi_slopes=None,
                                     deterministic=False,
                                     return_attn_probs=False,
