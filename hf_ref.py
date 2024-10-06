@@ -461,7 +461,7 @@ class NewPhi3Config(PretrainedConfig):
         base_path = '',
         device="cuda:0",
         vocab_size=32064,
-        block_size = 2,
+        block_size = 1,
         hidden_size=5120,
         intermediate_size=17920,
         num_hidden_layers=40,
