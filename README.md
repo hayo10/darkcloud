@@ -9,13 +9,18 @@ docker pull yezinri/samsung:v1
 ```
 docker run -it -v <MODEL_DIR>:<MODEL_DIR> --runtime nvidia yezinri/samsung:v1 /bin/bash
 ```
-ex) docker run -it -v /home/samsung/model:/home/samsung/model --runtime nvidia yezinri/samsung:v1 /bin/bash
+ex) 
+```
+docker run -it -v /home/samsung/model:/home/samsung/model --runtime nvidia yezinri/samsung:v1 /bin/bash
+```
 ---------------------------------------
 3. Execute the script
 ```
 python3 /script.py --file_path --base_path --batch_size --max_new_tokens
 ```
-ex) python3 /script.py --file_path='/data.jsonl' --base_path='/home/samsung/model' --batch_size=100 --max_new_tokens=15
+ex)
+```python3 /script.py --file_path='/data.jsonl' --base_path='/home/samsung/model' --batch_size=100 --max_new_tokens=15
+```
 - file_path : jsonl 파일 경로 
 - base_path : safetensors 경로 
 - batch_size : batch size , default=100입니다. 
