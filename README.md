@@ -19,7 +19,8 @@ docker run -it -v /home/samsung/model:/home/samsung/model --runtime nvidia yezin
 python3 /script.py --file_path --base_path --batch_size --max_new_tokens
 ```
 ex)
-```python3 /script.py --file_path='/data.jsonl' --base_path='/home/samsung/model' --batch_size=100 --max_new_tokens=15
+```
+python3 /script.py --file_path='/data.jsonl' --base_path='/home/samsung/model' --batch_size=100 --max_new_tokens=15
 ```
 - file_path : jsonl 파일 경로 
 - base_path : safetensors 경로 
