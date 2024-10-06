@@ -1,0 +1,2 @@
+packaging==24.1
+transformers>=4.44.0
